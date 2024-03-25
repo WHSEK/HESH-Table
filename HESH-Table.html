@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HESH-Table</title>
+    <link rel="stylesheet" href="src/HESH-Table.css">
+</head>
+<body>
+    <h1>Хеш-таблица</h1>
+
+    <div class="HashList">    
+        <ul id="dataList"></ul>
+    </div>
+
+    <div class="HashTabel"> 
+        <label for="keyInput">Ключ:</label>
+        <input type="text" id="AddKeyInput" name="keyInput">
+        
+        <label for="valueInput">Значение:</label>
+        <input type="text" id="valueInput" name="valueInput">
+        
+        <button id="addButton">Добавить данные</button>
+        
+        <label for="keyInput">Ключ для вывода данных:</label>
+        <input type="text" id="GiveKeyInput" name="keyInput">
+        
+        <button id="getDataButton">Вывести данные</button>
+        
+        <label for="keyInput">Ключ для удаления данных:</label>
+        <input type="text" id="DeleteKeyInput" name="keyInput">
+        
+        <button id="deleteButton">Удалить данные</button>
+        
+        <button id="clearButton">Очистить список</button>
+    </div>
+
+    <div class="HashRenderTable">
+        <button id="toggleTableButton">Показать/скрыть таблицу</button>
+
+    <table id="hashTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>Ключ</th>
+                <th>Значение</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+
+
+    <script src="src/HESH-Table.js"></script>
+</body>
+
+</html>
